@@ -39,12 +39,11 @@ The documentation is really great refrence source and guide if you choose this o
 
 # Step 2 
 -Now we are all set up.Two more things to do to initialize our project.
-- a) Pop up your command line interface. 
+- a)Pop up your command line interface. 
 - > Mongod -This command is simply to start  your database
 - > Mongo- This command provides a powerful interface for system administrators.
 
-- b)-Set up your project folder to resemble the folder structure below
-![File structrure](https://user-images.githubusercontent.com/61579772/84025284-dd9a2000-a9bd-11ea-9e4f-db1e61fdebb1.jpg)
+- b)Set up your project folder to resemble the folder structure below
 
 - c)Inside our project folder remeber to use the following dependancies
 ``` {
@@ -66,8 +65,8 @@ The documentation is really great refrence source and guide if you choose this o
   }
 }
 ```
-d)
--Set Up our App.js which is the entry point of our app.
+
+- d)Set Up our App.js which is the entry point of our app.
 ```
 //jshint esversion:6
 
@@ -94,7 +93,7 @@ app.listen(port, function() {
 });
 
 ```
-- You🤔: Bro what doesall this boilerplate code do?
+- You🤔: Bro what does all this boilerplate code do?
 - Me 🧐: The first 4 lines basically require dependeacies for our projects (Express,Body-parser,EJS,Mongoose)
 - Me 😏: We later tell our app to use this 4 dependacies and then we connect our database cluster using Mongoose.
 - You🤨:```mongoose.connect("mongodb+srv://admin-name:12345678@cluster0-abcd.mongodb.net/blogDB"```
