@@ -18,7 +18,7 @@ Hosted my Journal at 😎 @ https://pacific-savannah-54567.herokuapp.com/compose
 
 
 # Introduction
-## Step 1 
+# Step 1 
 > Setting up your local environment.
 #### Install Node.js
 First, make sure you have a supported version of Node.js installed 
@@ -39,16 +39,16 @@ The documentation is really great refrence source and guide if you choose this o
 - You🤒: Sounds complex,Could you break it down?
 
 
-## Step 2 
+# Step 2 
 -Now we are all set up.Two more things to do to initialize our project.
 - a) Pop up your command line interface. 
 - > Mongod -This command is simply to start  your database
 - > Mongo- This command provides a powerful interface for system administrators.
-- b)
-- Set up your project folder to resemble the folder structure below
+
+- b)-Set up your project folder to resemble the folder structure below
 ![File structrure](https://user-images.githubusercontent.com/61579772/84025284-dd9a2000-a9bd-11ea-9e4f-db1e61fdebb1.jpg)
-- c)
-Inside our project folder remeber to use the following dependancies
+
+- c)Inside our project folder remeber to use the following dependancies
 ``` {
   "name": "ejs-challenge",
   "version": "1.0.0",
@@ -109,7 +109,8 @@ app.listen(port, function() {
 - Me 😎: Now select ```Connect with MongoShell ```
 - Me : Copy the code generted for you and now let's paste it in our project and move on to the next step.
 
-## Step 3
+
+# Step 3
 - a) On our app.js let's create a schema for our journal posts.
 - b)Our journal will contain many posts.Each with a title  and some content.
 ```
@@ -147,7 +148,7 @@ const Post = mongoose.model("Post", postSchema);
 - Me 😄: This is EJS syntax and it's basically saying that there is a file in partials containing our header let's include it here.
 - Me 🧐: Make's it easier to reuse our components otherwise we would need to style a header and footer for each page.
 
-## Step 4
+# Step 4
 
 ![Compose](https://user-images.githubusercontent.com/61579772/84024881-3ddc9200-a9bd-11ea-910a-70e178fc139f.jpg)
 
@@ -157,7 +158,7 @@ We created a form to add posts to our Journal.
 - [ ] Your button has a type
 - [ ] Our textArea,Input and Buttons have names that will uniqely identify them.
 
-## Step 5
+# Step 5
 At this point if you headback to your app.js and start the server a few things should happen.
 - You🤔: What should happen
 - Me 🧐: Wuld be able to go to our Compose route on the browser and view the Compose page.
@@ -190,7 +191,7 @@ app.post("/compose", function(req, res) {
 - You🤔: So what is body parser?
 - Me 🧐: Body-parser is a piece of express middleware that reads a form's input and stores it as a javascript object accessible through ```req.body```
 
-## Step 6
+# Step 6
 We are almost done a few more tweaks and you'll be ready to deploy your app.
 
 - a)Finsih the rest of your app by adding the about and contacts Page.
