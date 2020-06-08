@@ -6,11 +6,13 @@
 - An intermediate tutorial guide for using MongoDB,Express, NodeJs to create your own journling app.
 - At the end of this you should be able to set up and deploy your own app on Heroku or Netifly.You'll get familiar using Node.JS,Express,Lodash and a couple of tricks up your sleeve too.
 
+Hosted my Journal at 😎 @ https://pacific-savannah-54567.herokuapp.com/compose ,Be sure to have a look.I'm open to suggestions and Impprovments.
+
 ## What You'll Learn🤷‍♂️
 - How to configure and setup NodeJS to a MongoDb Database
 - Integrate Mongoose 
 - Integrate Express.Js-Node web framework
-- Routing parameters
+- Routing parameters.
 - What is Lodash and Body parser
 - Deploying your own app
 
@@ -23,9 +25,8 @@ First, make sure you have a supported version of Node.js installed
 - https://nodejs.org/en/download/
 
 #### Install the MongoDB Node.js Driver
-The MongoDB Node.js Driver allows you to easily interact with MongoDB databases from within Node.js applications. You’ll need the driver in order to connect to your database and execute the queries.
 - npm install mongodb 
-- yarn install mongodb
+
 
 #### Create a free MongoDB Atlas cluster ✔
 The documentation is really great refrence source and guide if you choose this option.
@@ -45,9 +46,29 @@ a) Pop up your command line interface.
 - > Mongo- This command provides a powerful interface for system administrators.
 b)
 - Set up your project folder to resemble the folder structure below
-![HOme view](https://user-images.githubusercontent.com/61579772/84022777-66628d00-a9b9-11ea-97ac-19f746ca91c8.jpg)
-
+![File structrure](https://user-images.githubusercontent.com/61579772/84025284-dd9a2000-a9bd-11ea-9e4f-db1e61fdebb1.jpg)
 c)
+Inside our project folder remeber to use the following dependancies
+``` {
+  "name": "ejs-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.6"
+  }
+}
+```
+d)
 -Set Up our App.js which is the entry point of our app.
 ```
 //jshint esversion:6
@@ -131,22 +152,100 @@ const Post = mongoose.model("Post", postSchema);
 ![Compose](https://user-images.githubusercontent.com/61579772/84024881-3ddc9200-a9bd-11ea-910a-70e178fc139f.jpg)
 
 We created a form to add posts to our Journal.
+- What to look out for while creating a form
+- [x] Your form has a POST method
+- [ ] Your button has a type
+- [ ] Our textArea,Input and Buttons have names that will uniqely identify them.
+
+## Step 5
+At this point if you headback to your app.js and start the server a few things should happen.
+- You🤔: What should happen
+- Me 🧐: Wuld be able to go to our Compose route on the browser and view the Compose page.
+- You🤔: Nothing special about that
+- Me 🧐: I agree let's hook up some code and make some post request to add some data.
+
+```
+app.get("/compose", function(req, res) {
+    res.render("compose");
+});
+
+app.post("/compose", function(req, res) {
+    const post = new Post({
+        title: req.body.postTitle,
+        content: req.body.postBody
+    });
+
+    post.save(function(err) {
+        if (!err) {
+            res.redirect("/");
+        }
+    });
+});
+```
+- You🤔: So what is happening up here
+- Me 🧐: We are creating an Object assigning it to a constant.
+- Me 🤔: This Object will contain the contents of our post ccapturedd from our Compose form.
+- Me 🧐: Once the user hits the compose button,the post get's saved in our databse and we get redirected back home.
+- Me 🧐: In order to read HTTP POST data , we have to use "body-parser" node module.
+- You🤔: So what is body parser?
+- Me 🧐: Body-parser is a piece of express middleware that reads a form's input and stores it as a javascript object accessible through ```req.body```
+
+## Step 6
+We are almost done a few more tweaks and you'll be ready to deploy your app.
+
+- a)Finsih the rest of your app by adding the about and contacts Page.
+- b)A small hack ,you could hard home,contact and about content for now.So that we wouldn't have to worry about creating different schemas for this individual content
+
+```
+app.get("/about", function(req, res) {
+    res.render("about", { aboutContent: aboutContent });
+});
+
+app.get("/contact", function(req, res) {
+    res.render("contact", { contactContent: contactContent });
+});
+
+```
+# Deploying our App
+- Me 🧐: Time to move from local host and meet Heroku
+- You🤔: My app is working fine here no need to complicate everything.
+- Me 🧐: I guess I have to move on with the courageous ones!
+
+### What we need to ddeploy our app
+1)[ ] Heroku Account-https://www.heroku.com/
+2)[ ] Understand basic Git commands
+3)[ ] Configure our app to run in different environment
+4)[ ] Procfile
+4)[ ] npm install heroku CLI
+4)[ ] Read this heroku deployment tutorial.https://devcenter.heroku.com/articles/deploying-nodejs#:~:text=Run%20the%20npm%20install%20command,json%20file.&text=Start%20your%20app%20locally%20using,part%20of%20the%20Heroku%20CLI.&text=Your%20app%20should%20now%20be,http%3A%2F%2Flocalhost%3A5000%2F.
+
+Once all this is set up lets proceed.
+```
+git init
+git add .
+git commit -m "My first commit"
+heroku login
+
+Enter your Heroku credentials.
+...
+heroku create
+Git remote heroku added
+git push heroku master
+```
+- Me 🧐: I know you followed up through till this point and maybe are still encounteeing some errors
+- You🤔: Can you read my brain or something ?
+- Me 🧐: That my friend is called programming,you can't escape the process all you could do is atleast enjoy and love the journey.
+- Me 🧐: Solve your bugs,slowly this are the hidden gems to learning new concepts.
+
 
 ### Conclusion
-I hope at the end of this you were able to set up your local environment and set up a simple database using MongoDB and NodeJs.
-- Perform basic CRUD operations
-- Start Living Healthy and eat fruits. 😋
+I hope at the end of this you were able to deploy your app to heroku and have learned a couple of new things.
+- Me 🧐: You can view my app here @https://pacific-savannah-54567.herokuapp.com/compose.
 
 ### References❤
-- 1.https://docs.mongodb.com/manual/reference/mongo-shell/#mongo-shell-command-history
-- 2.https://stackoverflow.com/questions/4883045/mongodb-difference-between-running-mongo-and-mongod-databases
+- 1.https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
+- 2.https://scotch.io/tutorials/use-ejs-to-template-your-node-application
 - 3.https://mongoosejs.com/
 - 4.https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database
 
-
-## Alternative
-### Download Robo 3T
-This is a GUI and IDE for developers and data engineers who work with MongoDB. Data management features such as in-place editing and easy database connections(In this case I used Robo 3T for convinience and simplicity)
-
-![Blogpage2](https://user-images.githubusercontent.com/61579772/84015390-598c6c00-a9ae-11ea-989a-980925242c04.jpg)
 
