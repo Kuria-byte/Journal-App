@@ -18,15 +18,15 @@
 # Introduction
 # Step 1 
 > Setting up your local environment.
-#### Install Node.js
+#### a)Install Node.js
 First, make sure you have a supported version of Node.js installed 
 - https://nodejs.org/en/download/
 
-#### Install the MongoDB Node.js Driver
+#### b)Install the MongoDB Node.js Driver
 - npm install mongodb 
 
 
-#### Create a free MongoDB Atlas cluster ✔
+#### c)Create a free MongoDB Atlas cluster ✔
 The documentation is really great refrence source and guide if you choose this option.
 -https://docs.atlas.mongodb.com/getting-started/
 ![Cluster](https://user-images.githubusercontent.com/61579772/84018832-0ff25000-a9b3-11ea-97e8-70c9f236fe5e.jpg)
