@@ -3,8 +3,6 @@
 ![Blogpage1](https://user-images.githubusercontent.com/61579772/84015389-58f3d580-a9ae-11ea-9ab4-fa1d748dca83.jpg)
 
 - This simple app let's you compose,view and edit journals in real time.
-- An intermediate tutorial guide for using MongoDB,Express, NodeJs to create your own journling app.
-- At the end of this you should be able to set up and deploy your own app on Heroku or Netifly.You'll get familiar using Node.JS,Express,Lodash and a couple of tricks up your sleeve too.
 
 Hosted my Journal at 😎 @ https://pacific-savannah-54567.herokuapp.com/compose ,Be sure to have a look.I'm open to suggestions and Improvments.
 
