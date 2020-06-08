@@ -6,7 +6,7 @@
 - An intermediate tutorial guide for using MongoDB,Express, NodeJs to create your own journling app.
 - At the end of this you should be able to set up and deploy your own app on Heroku or Netifly.You'll get familiar using Node.JS,Express,Lodash and a couple of tricks up your sleeve too.
 
-Hosted my Journal at 😎 @ https://pacific-savannah-54567.herokuapp.com/compose ,Be sure to have a look.I'm open to suggestions and Impprovments.
+Hosted my Journal at 😎 @ https://pacific-savannah-54567.herokuapp.com/compose ,Be sure to have a look.I'm open to suggestions and Improvments.
 
 ## What You'll Learn🤷‍♂️
 - How to configure and setup NodeJS to a MongoDb Database
@@ -41,13 +41,13 @@ The documentation is really great refrence source and guide if you choose this o
 
 ## Step 2 
 -Now we are all set up.Two more things to do to initialize our project.
-a) Pop up your command line interface. 
+- a) Pop up your command line interface. 
 - > Mongod -This command is simply to start  your database
 - > Mongo- This command provides a powerful interface for system administrators.
-b)
+- b)
 - Set up your project folder to resemble the folder structure below
 ![File structrure](https://user-images.githubusercontent.com/61579772/84025284-dd9a2000-a9bd-11ea-9e4f-db1e61fdebb1.jpg)
-c)
+- c)
 Inside our project folder remeber to use the following dependancies
 ``` {
   "name": "ejs-challenge",
@@ -212,12 +212,12 @@ app.get("/contact", function(req, res) {
 - Me 🧐: I guess I have to move on with the courageous ones!
 
 ### What we need to ddeploy our app
-1)[ ] Heroku Account-https://www.heroku.com/
-2)[ ] Understand basic Git commands
-3)[ ] Configure our app to run in different environment
-4)[ ] Procfile
-4)[ ] npm install heroku CLI
-4)[ ] Read this heroku deployment tutorial.https://devcenter.heroku.com/articles/deploying-nodejs#:~:text=Run%20the%20npm%20install%20command,json%20file.&text=Start%20your%20app%20locally%20using,part%20of%20the%20Heroku%20CLI.&text=Your%20app%20should%20now%20be,http%3A%2F%2Flocalhost%3A5000%2F.
+- 1)[ ] Heroku Account-https://www.heroku.com/
+- 2)[ ] Understand basic Git commands
+- 3)[ ] Configure our app to run in different environment
+- 4)[ ] Procfile
+- 5)[ ] npm install heroku CLI
+- 6)[ ] Read this heroku deployment tutorial.https://devcenter.heroku.com/articles/deploying-nodejs#:~:text=Run%20the%20npm%20install%20command,json%20file.&text=Start%20your%20app%20locally%20using,part%20of%20the%20Heroku%20CLI.&text=Your%20app%20should%20now%20be,http%3A%2F%2Flocalhost%3A5000%2F.
 
 Once all this is set up lets proceed.
 ```
