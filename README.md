@@ -133,7 +133,7 @@ const Post = mongoose.model("Post", postSchema);
 
 ![HOme view](https://user-images.githubusercontent.com/61579772/84022414-cad11c80-a9b8-11ea-992e-9293a7f60ba8.jpg)
 
-- You🤔: What the #### is happening here.
+- You🤔: What the #%$& isvhappening here.
 - You 🧐: We have alot of non-html code in here and my linter is blowing up with errors
 - You🤔: Maybe I should look for an easier tutorial to follow 
 - Me 🧐: Relax bro!
@@ -210,12 +210,12 @@ app.get("/contact", function(req, res) {
 - Me 🧐: I guess I have to move on with the courageous ones!
 
 ### What we need to ddeploy our app
-- 1)[ ] Heroku Account-https://www.heroku.com/
-- 2)[ ] Understand basic Git commands
-- 3)[ ] Configure our app to run in different environment
-- 4)[ ] Procfile
-- 5)[ ] npm install heroku CLI
-- 6)[ ] Read this heroku deployment tutorial.https://devcenter.heroku.com/articles/deploying-nodejs#:~:text=Run%20the%20npm%20install%20command,json%20file.&text=Start%20your%20app%20locally%20using,part%20of%20the%20Heroku%20CLI.&text=Your%20app%20should%20now%20be,http%3A%2F%2Flocalhost%3A5000%2F.
+- 1) Heroku Account-https://www.heroku.com/
+- 2) Understand basic Git commands
+- 3) Configure our app to run in different environment
+- 4) Procfile
+- 5) npm install heroku CLI
+- 6)Read this heroku deployment tutorial.
 
 Once all this is set up lets proceed.
 ```
@@ -243,7 +243,7 @@ I hope at the end of this you were able to deploy your app to heroku and have le
 ### References❤
 - 1.https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
 - 2.https://scotch.io/tutorials/use-ejs-to-template-your-node-application
-- 3.https://mongoosejs.com/
+- 3.https://devcenter.heroku.com/articles/deploying-nodejs#:~:text=Run%20the%20npm%20install%20command,json%20file.&text=Start%20your%20app%20locally%20using,part%20of%20the%20Heroku%20CLI.&text=Your%20app%20should%20now%20be,http%3A%2F%2Flocalhost%3A5000%2F.
 - 4.https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database
 
 
