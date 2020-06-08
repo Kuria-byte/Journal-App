@@ -1,6 +1,6 @@
 # Journal-App
 
-![Blogpage1](https://user-images.githubusercontent.com/61579772/84015389-58f3d580-a9ae-11ea-9ab4-fa1d748dca83.jpg)
+![page](https://user-images.githubusercontent.com/61579772/84030909-68334d00-a9c7-11ea-94ed-6bec767ca539.jpg)
 
 - This simple app let's you compose,view and edit journals in real time.
 
