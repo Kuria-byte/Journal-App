@@ -7,6 +7,7 @@
 - Compose a note 😎 @ https://pacific-savannah-54567.herokuapp.com/compose 
 
 ## What You'll Learn🤷‍♂️
+- Using MEN stack!
 - How to configure and setup NodeJS to a MongoDb Database
 - Integrate Mongoose 
 - Integrate Express.Js-Node web framework
