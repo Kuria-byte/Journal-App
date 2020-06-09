@@ -318,8 +318,8 @@ app.listen(port, function() {
 - 2) Understand basic Git commands
 - 3) Configure our app to run in different environment
 - 4) Procfile
-- 5) npm install heroku CLI
-- 6)Read this heroku deployment tutorial.
+- 5) heroku CLI
+- 6) Read this heroku nodeJs deployment tutorial.
 
 #### Once all this is set up lets proceed.
 
