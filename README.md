@@ -130,7 +130,9 @@ const Post = mongoose.model("Post", postSchema);
 ```
 
 - You🤔: Where is the Front-end of this stuff,it's abit confusing.
-- Me 🧐: We set up a folder earlier under views.We named this folder Partiasls.
+- Me 🧐: We previously set up a folder under views.Containing the Home,about,contact and partials.
+- Me 🧐: Check it out
+
 
 ![HOme view](https://user-images.githubusercontent.com/61579772/84022414-cad11c80-a9b8-11ea-992e-9293a7f60ba8.jpg)
 
