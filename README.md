@@ -299,8 +299,13 @@ app.listen(port, function() {
 });
 ```
 - You 🧐: What is the ENV stuff up here.
-- You🤔: In many environments (e.g. Heroku), and as a convention, you can set the environment variable PORT to tell your web server what port to listen on.
+- Me🤔: In many environments (e.g. Heroku), and as a convention, you can set the environment variable PORT to tell your web server what port to listen on.
 - Me 🧐: I guess that's it.
+- You🧐: Hold up ,I didn't see us use lodash
+- Me 🤔: _
+- You🧐: Huh!
+- Me 🤔: That's how we use lodash
+- Me 🧐: You see for us to redirect smoothly without worrying how you type in your url.We use lodash a JavaScript library.
 
 
 # Deploying our App
@@ -354,5 +359,6 @@ I hope at the end of this you were able to deploy your app to heroku and have le
 - 2.https://scotch.io/tutorials/use-ejs-to-template-your-node-application
 - 3.https://devcenter.heroku.com/articles/deploying-nodejs#:~:text=Run%20the%20npm%20install%20command,json%20file.&text=Start%20your%20app%20locally%20using,part%20of%20the%20Heroku%20CLI.&text=Your%20app%20should%20now%20be,http%3A%2F%2Flocalhost%3A5000%2F.
 - 4.https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database
+- 5.https://lodash.com/
 
 
